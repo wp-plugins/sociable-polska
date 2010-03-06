@@ -26,12 +26,14 @@ Zapraszam do komentowania wtyczki bezpośrednio na blogu [WPMedia.pl](http://wpm
 == Installation ==
 
 **Instalacja**
+
 1. Zainstaluj wtyczkę [Sociable](http://wordpress.org/extend/plugins/sociable/ "WordPress &#8250; Sociable &laquo; WordPress Plugins"),
 1. Rozpakuj archiwum `sociable-polska.zip`,
 1. Wyślij katalog `sociable-polska` wraz z plikami do katalogu wtyczek (domyślnie jest to katalog `wp-content/plugins`). Jeżeli istnieje taka możliwość, ustaw tryb pracy FTP na binarny.
 1. Dalsza część znajduje się w sekcji "Aktywacja".
 
 **Aktualizacja**
+
 1. Wyłącz wtyczkę w panelu administratora,
 1. Usuń katalog `sociable-polska` wraz z plikami z katalogu wtyczek (domyślnie jest to katalog `wp-content/plugins`),
 1. Dalsza część znajduje się w sekcji "Instalacja".
@@ -39,6 +41,7 @@ Zapraszam do komentowania wtyczki bezpośrednio na blogu [WPMedia.pl](http://wpm
 **Uwaga:** Osobiście polecam skorzystanie z automatycznego aktualizatora wtyczek w panelu administratora.
 
 **Aktywacja**
+
 1. Przejdź do menedżera wtyczek w panelu administratora,
 1. Aktywuj wtyczkę.
 
