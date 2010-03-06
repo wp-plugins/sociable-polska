@@ -3,13 +3,13 @@
 	Plugin Name: Sociable Polska
 	Plugin URI: http://wpmedia.pl/2009/07/20/sociable-polska-oficjalnie-wydane/
 	Description: Dodatkowy zestaw najpopularniejszych polskich serwisów dla wtyczki <a href="http://wordpress.org/extend/plugins/sociable/" title="WordPress &#8250; Sociable &laquo; WordPress Plugins">Sociable</a>.
-	Version: 1.0.0
+	Version: 1.0.1
 	Author: pavobe
 	Author URI: http://pavobe.pl/
 */
 
 /*
-	Copyright 2009 pavobe (email: pavobe.dev@gmail.com)
+	Copyright 2010 pavobe (email: pavobe.dev@gmail.com)
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -36,89 +36,62 @@
 */
 
 function sociable_add_polish_sites($known_sites) {
-	$known_sites['24foto'] = array(
-		'favicon' => 'http://24foto.pl/favicon.ico',
-		'url' => 'http://24foto.pl/dodaj-do/?cf_field_2=TITLE&amp;cf_field_3=EXCERPT&amp;cf_field_4=PERMALINK',
-	);
 	$known_sites['Blip'] = array(
-		'favicon' => 'http://blip.pl/images/favicon.gif',
-		'url' => 'http://blip.pl/dashboard?body=Polecam: TITLE PERMALINK',
-		'description' => 'BLIP - Bardzo Lubię Informować Przyjaciół'
+		'favicon' => '../../sociable-polska/images/blip.gif',
+		'url' => 'http://blip.pl/dashboard?body=TITLE PERMALINK',
+		'description' => 'Blip'
 	);
 	$known_sites['Co-Robie.pl'] = array(
-		'favicon' => 'http://co-robie.pl/favicon.ico',
-		'url' => 'http://co-robie.pl/home/?add=Polecam: TITLE PERMALINK',
-		'description' => 'Co-Robie.pl | Co teraz robisz?'
+		'favicon' => '../../sociable-polska/images/co-robie.ico',
+		'url' => 'http://co-robie.pl/home/?add=TITLE PERMALINK',
+		'description' => 'Co-Robie.pl'
 	);
 	$known_sites['Flaker'] = array(
-		'favicon' => 'http://flaker.pl/favicon.ico',
+		'favicon' => '../../sociable-polska/images/flaker.ico',
 		'url' => 'http://flaker.pl/add2flaker.php',
-		'description' => 'Wrzuć to na Flakera - powiadom swoich Znajomych'
-	);
-	$known_sites['Forumowisko'] = array(
-		'favicon' => 'http://forumowisko.pl/favicon.ico',
-		'url' => 'http://www.forumowisko.pl/index.php?act=post&amp;do=new_post&amp;f=76&amp;get_post=PERMALINK&amp;get_title=TITLE',
+		'description' => 'Flaker'
 	);
 	$known_sites['Grono'] = array(
-		'favicon' => 'http://s1.grono.net/images/common/favicon.ico',
+		'favicon' => '../../sociable-polska/images/grono.ico',
 		'url' => 'http://grono.net/pub/popup/link/urlfetch/?url=PERMALINK&amp;title=TITLE',
-		'description' => 'grono.net - internetowa społeczność przyjaciół'
+		'description' => 'Grono'
 	);
-	$known_sites['Linkr.pl'] = array(
-		'favicon' => 'http://linkr.pl/img/favicon.ico',
-		'url' => 'http://www.linkr.pl/html/dodaj?url=PERMALINK&amp;title=TITLE',
-		'description' => 'Dodaj link - Linkr.pl - tylko ciekawe linki'
+	$known_sites['Kciuk.pl'] = array(
+		'favicon' => '../../sociable-polska/images/kciuk.ico',
+		'url' => 'http://www.kciuk.pl/Dodaj-link/?PERMALINK/?TITLE/?EXCERPT',
+		'description' => 'Kciuk.pl'
 	);
 	$known_sites['OSnews.pl'] = array(
-		'favicon' => 'http://osnews.pl/stuff/osnews/osnews.ico',
+		'favicon' => '../../sociable-polska/images/osnews.ico',
 		'url' => 'http://osnews.pl/dodaj-niusa/?external=true&amp;title=TITLE&amp;url=PERMALINK',
-		'description' => 'Dodaj niusa &laquo; OSnews.pl'
+		'description' => 'OSnews.pl'
 	);
 	$known_sites['Pinger'] = array(
-		'favicon' => 'http://www.pinger.pl/favicon.png',
-		'url' => 'http://pinger.pl/share?title=TITLE&amp;content=Polecam: TITLE PERMALINK',
-		'description' => 'pinger.pl - Nie taki zwykły blog.'
-	);
-	$known_sites['Polec.pl'] = array(
-		'favicon' => 'http://www.polec.pl/favicon.ico',
-		'url' => 'http://www.polec.pl/submit.php?url=PERMALINK',
-		'description' => 'Polec.pl - Pozytywnie Odjazdowo Lajtowo Elokwentny Content'
-	);
-	$known_sites['Sfora.pl'] = array(
-		'favicon' => 'http://www.sfora.pl/favicon.ico',
-		'url' => 'http://www.sfora.pl/Link/Wysforuj/?Link=PERMALINK&amp;Tytul=TITLE&amp;Opis=EXCERPT',
-		'description' => 'Sfora.pl - Dodaj link i pozwól by wysforowali go inni użytkownicy serwisu Sfora.pl'
+		'favicon' => '../../sociable-polska/images/pinger.png',
+		'url' => 'http://pinger.pl/share?title=TITLE&amp;content=TITLE PERMALINK',
+		'description' => 'Pinger'
 	);
 	$known_sites['Spis.pl'] = array(
-		'favicon' => 'http://www.spis.pl/favicon.ico',
+		'favicon' => '../../sociable-polska/images/spis.ico',
 		'url' => 'http://www.spis.pl/story-add/?url=PERMALINK&amp;title=TITLE&amp;description=EXCERPT',
-		'description' => 'Spis.pl - najciekawsze w sieci'
+		'description' => 'Spis.pl'
 	);
-	$known_sites['vala.pl'] = array(
-		'favicon' => 'http://www.vala.pl/gfx/vala.png',
-		'url' => 'http://www.vala.pl/dodaj/?title=TITLE&amp;url=PERMALINK',
-		'description' => 'vala.pl - zostaw to na później'
+	$known_sites['Sledzik'] = array(
+		'favicon' => '../../sociable-polska/images/sledzik.ico',
+		'url' => 'http://nasza-klasa.pl/sledzik?shout=TITLE PERMALINK',
+		'description' => 'Śledzik'
+	);
+	$known_sites['Vala.pl'] = array(
+		'favicon' => '../../sociable-polska/images/vala.gif',
+		'url' => 'http://www.vala.pl/dodaj/?title=TITLE&url=PERMALINK',
+		'description' => 'Vala.pl'
 	);
 	$known_sites['Wahacz.pl'] = array(
-		'favicon' => 'http://www.wahacz.pl/favicon.ico',
+		'favicon' => '../../sociable-polska/images/wahacz.ico',
 		'url' => 'http://www.wahacz.pl/submit.php?url=PERMALINK',
 		'description' => 'Wahacz.pl'
 	);
-	$known_sites['WPigułce.net'] = array(
-		'favicon' => 'http://wpigulce.net/img/favicons/favicon4.ico',
-		'url' => 'http://wpigulce.net/submit.php?url=PERMALINK',
-		'description' => 'WPigułce.net'
-	);
-	$known_sites['Wyczaj.to'] = array(
-		'favicon' => 'http://wyczaj.to/img/favicon2.ico',
-		'url' => 'http://wyczaj.to/api/external/add_external.html?full_url=PERMALINK&amp;title=TITLE&amp;description=EXCERPT',
-		'description' => 'Dodaj wyczajenie'
-	);
-	$known_sites['YouBookmarks'] = array(
-		'favicon' => 'http://youbookmarks.com/favicon.ico',
-		'url' => 'http://youbookmarks.com/settings/?id=add&amp;url=PERMALINK',
-		'description' => 'YouBookmarks Ustawienia / Nowa zakładka'
-	);
+
 	return $known_sites;
 }
 
